@@ -1,12 +1,13 @@
 import React from 'react';
 import ArrayObj from './components/ArrayObj';
+import Shopping from './components/Shopping';
 // import Obj from './components/Obj';
 // import Product from './components/Product';
 // import ArrayMethods from './components/ArrayMethods';
 // import CompA from './components/CompA';
-import iphone13 from "../src/assests/13.jpg";
-import iphone15 from "./assests/15.jpg";
-import iphone16 from "./assests/iphone.webp";
+// import iphone13 from "../src/assests/13.jpg";
+// import iphone15 from "./assests/15.jpg";
+// import iphone16 from "./assests/iphone.webp";
 // import Singlevalue from './components/Singlevalue';
 // import Array from './components/Array';
 
@@ -15,26 +16,26 @@ const App = () => {
   //  let a = 10;
   // let arr = [1, 2, 3, 4, 5];
   // let obj = { batch: "FSD-WD-B-33", mode: "Weekday", mentor: "Rupan" };
-  let arrObj = [
-    {
-      name: "Iphone",
-      price: "$899",
-      desc: "This is Iphone 13 pro",
-      image: iphone13,
-    },
-    {
-      name: "Laptop",
-      price: "$1000",
-      desc: "This is Azsus Laptop",
-      image: iphone15,
-    },
-    {
-      name: "Tab",
-      price: "$499",
-      desc: "This is Ipad Pro",
-      image: iphone16,
-    }
-  ];
+  // let arrObj = [
+  //   {
+  //     name: "Iphone",
+  //     price: "$899",
+  //     desc: "This is Iphone 13 pro",
+  //     image: iphone13,
+  //   },
+  //   {
+  //     name: "Laptop",
+  //     price: "$1000",
+  //     desc: "This is Azsus Laptop",
+  //     image: iphone15,
+  //   },
+  //   {
+  //     name: "Tab",
+  //     price: "$499",
+  //     desc: "This is Ipad Pro",
+  //     image: iphone16,
+  //   }
+  // ];
   const shopping = [
      {
       id:1,
@@ -71,7 +72,8 @@ const App = () => {
       {/* <Singlevalue a={a}/> */}
       {/* <Array arr={arr}/> */}
       {/* <Obj obj={obj}/> */}
-      <ArrayObj  arrObj={arrObj}/>
+      {/* <ArrayObj  arrObj={arrObj}/> */}
+      <Shopping shopping={shopping}  />
 
     </div>
   );
