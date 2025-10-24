@@ -6,11 +6,12 @@ import React from 'react';
 // import iphone15 from "./assests/15.jpg";
 // import iphone16 from "./assests/iphone.webp";
 import Singlevalue from './components/Singlevalue';
+import Array from './components/Array';
 
 
 const App = () => {
-   let a = 10;
-  // let arr = [1, 2, 3, 4, 5];
+  //  let a = 10;
+  let arr = [1, 2, 3, 4, 5];
   // let obj = { batch: "FSD-WD-B-33", mode: "Weekday", mentor: "Rupan" };
   // let arrObj = [
   //   {
@@ -65,7 +66,8 @@ const App = () => {
       {/* <CompA phone="Iphone" image={iphone13} desc="iphone13"/>
       <CompA phone="Iphone15" image={iphone15} desc="iphone15"/>
       <CompA phone="Iphone16" /> */}
-      <Singlevalue a={a}/>
+      {/* <Singlevalue a={a}/> */}
+      <Array arr={arr}/>
 
     </div>
   );
