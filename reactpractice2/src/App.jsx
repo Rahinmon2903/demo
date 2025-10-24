@@ -14,7 +14,8 @@ const App = () => {
       {/* <ArrayMethods/> */}
       <CompA phone="Iphone" image={iphone13} desc="iphone13"/>
       <CompA phone="Iphone15" image={iphone15} desc="iphone15"/>
-      <CompA phone="Iphone16" image={iphone16} desc="iphone16"/>
+      <CompA phone="Iphone16" />
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import load from "../assests/load.jpg"
 
 const CompA = (props) => {
     return (
@@ -12,5 +13,11 @@ const CompA = (props) => {
         </>
     );
 };
+CompA.defaultProps={
+    phone:"dummy phone",
+    image:load,
+    desc:"dummy desc"
+
+}
 
 export default CompA;
