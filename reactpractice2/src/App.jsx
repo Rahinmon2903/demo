@@ -1,6 +1,7 @@
 import React from 'react';
-import ArrayObj from './components/ArrayObj';
-import Shopping from './components/Shopping';
+import ArrayMethods from './components/ArrayMethods';
+// import ArrayObj from './components/ArrayObj';
+// import Shopping from './components/Shopping';
 // import Obj from './components/Obj';
 // import Product from './components/Product';
 // import ArrayMethods from './components/ArrayMethods';
@@ -36,32 +37,32 @@ const App = () => {
   //     image: iphone16,
   //   }
   // ];
-  const shopping = [
-     {
-      id:1,
-      name:"Printer",
-      price:5000,
-      category:"Electronics"
-    },
-     {
-      id:2,
-      name:"Scanner",
-      price:5000,
-      category:"Electronics"
-    },
-     {
-      id:3,
-      name:"Carrot",
-      price:50,
-      category:"Grocery"
-    },
-     {
-      id:4,
-      name:"Apple",
-      price:250,
-      category:"Grocery"
-    },
-  ]
+  // const shopping = [
+  //    {
+  //     id:1,
+  //     name:"Printer",
+  //     price:5000,
+  //     category:"Electronics"
+  //   },
+  //    {
+  //     id:2,
+  //     name:"Scanner",
+  //     price:5000,
+  //     category:"Electronics"
+  //   },
+  //    {
+  //     id:3,
+  //     name:"Carrot",
+  //     price:50,
+  //     category:"Grocery"
+  //   },
+  //    {
+  //     id:4,
+  //     name:"Apple",
+  //     price:250,
+  //     category:"Grocery"
+  //   },
+  // ]
   return (
     <div>
       {/* <Product name="iphone" price="900" /> */}
@@ -73,7 +74,8 @@ const App = () => {
       {/* <Array arr={arr}/> */}
       {/* <Obj obj={obj}/> */}
       {/* <ArrayObj  arrObj={arrObj}/> */}
-      <Shopping shopping={shopping}  />
+      {/* <Shopping shopping={shopping}  /> */}
+      <ArrayMethods/>
 
     </div>
   );
