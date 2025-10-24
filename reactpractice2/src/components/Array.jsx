@@ -3,9 +3,11 @@ import React from 'react';
 const Array = ({arr}) => {
     return (
         <div>
-           {arr.map((ele)=>{
+           {arr.map((ele,index)=>{
             return(
-                <div>{ele}</div>
+                <div key={index}>
+                <p>{ele}</p>
+                </div>
             )
            })}
             
