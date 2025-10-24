@@ -9,6 +9,36 @@ const Add = ()=>{
  console.log(ind);
   console.log("User added", users[users.length-1]);
   users.forEach((ele)=> console.log(ele));
+  let index =users.indexOf("Sukin");
+  console.log(index);
+  if(index==-1){
+    console.log("there is no such user");
+    users.push("Sukin");
+    users.forEach((ele)=> console.log(ele));
+    
+  }
+}
+const remove = ()=>{
+  let removed=users.pop();
+
+      users.forEach((ele)=> console.log(ele));
+
+  
+}
+const slice = ()=>{
+   let slice1=users.slice(1,3);
+     console.log(slice1);
+   console.log(users);
+
+   
+   
+
+}
+const Splice = ()=>{
+   let splice=users.splice(1,3 ,"rahin","rahin","rahin");
+   console.log(users);
+   
+
 }
 
 
@@ -25,9 +55,9 @@ const Add = ()=>{
         })}
       </ul>
       <button onClick={Add} >Add</button>
-      <button >Remove</button>
-      <button>Slice</button>
-      <button>Splice</button>
+      <button onClick={remove}>Remove </button>
+      <button onClick={slice}>Slice</button>
+      <button onClick={Splice}>Splice</button>
     </>
   );
 };
