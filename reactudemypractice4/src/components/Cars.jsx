@@ -1,4 +1,5 @@
 import React from "react";
+import Info from "./Info";
 
 const Cars = (props) => {
   return (
@@ -9,8 +10,8 @@ const Cars = (props) => {
           <img  className="circle-img"src={props.img} alt="avatar_img" />
         </div>
         <div className="bottom">
-          <p className="info">{props.phone}</p>
-          <p className="info">{props.email}</p>
+         <Info extra={props.phone}
+         extra2={props.email}/>
         </div>
       </div>
     </>
