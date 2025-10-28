@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const UseEffect = () => {
-    return (
-        <div>
+    console.log("outside useeffect");
+    
+   
+
+    useEffect(()=>{
+        // mounting
+        const interval=setInterval(()=>{
+            console.log("data fetching")
+        },2000)
+        // unmounting phrase
+        return() =>{
+            console.log("clear");
+            clearInterval(interval)
+
             
-        </div>
+
+
+        }
+    },[])
+    return (
+        <>
+        <h1>HELLO WORLD</h1>
+     
+            
+        </>
     );
 };
 
