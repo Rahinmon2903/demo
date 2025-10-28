@@ -29,6 +29,7 @@ const Compc = () => {
                     <p>{ele.description}</p>
                     <p>{ele.price}</p>
                     <img src={ele.image} />
+                    <button>add to cart</button>
 
                         </div>
                 )
