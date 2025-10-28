@@ -1,0 +1,17 @@
+img{
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: darken;
+    
+}
+.cards{
+    background-color: aqua;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    
+}
