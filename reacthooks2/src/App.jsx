@@ -1,12 +1,13 @@
 import React from 'react';
-import Memo from './Components/Memo';
-// import Cards from './Components/Cards';
+
+import Cards from './Components/Cards';
+
 
 const App = () => {
   return (
     <div>
-      {/* <Cards/> */}
-      <Memo/>
+      <Cards/>
+      {/* <Memo/> */}
       
     </div>
   );

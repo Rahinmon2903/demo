@@ -1,67 +1,61 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Cards = () => {
-    const[formdata,stFormData]=useState({
-        username:"RAHIN",
+    const[FormData,setFormData]=useState({
+        username:"Rahin Mon",
         password:"",
-        email:"",
-
+        gender:"female"
     })
-  return (
-    <div>
-      <h1>Register User</h1>
-      <form>
-        <div>
-          <p>
-            <label>username</label>
-          </p>
-          <p>
-            <input
-              type="text"
-              value={formdata.username}
-              name="username"
-              placeholder="enter username"
-            ></input>
-          </p>
-        </div>
-        <div>
-          <p>
-            <label>password</label>
-          </p>
-          <p>
-            <input
-              type="text"
-              name="password"
-              value={formdata.password}
-              placeholder="enter password"
-            ></input>
-          </p>
-        </div>
-        <div>
-          <p>
-            <label>email</label>
-          </p>
-          <p>
-            <input type="text" name="email" placeholder="enter email"></input>
-          </p>
-        </div>
-        <div>
-          <p>
-            <label>Gender</label>
-          </p>
-          <p>
-            <select name="gender">
-             <option value="male">Male</option>
-             <option value="female">Female</option>
-              <option value="other">Not to say</option>
 
+    // const handlechange=(e)=>{
+    //     setFormData(e.target.value)
+           
+        
+
+    // }
+       const handlechange=(e)=>{
+        const{name,value}=e.target;
+        // console.log(e.target.name);
+        // console.log(e.target.value);
+        //  console.log(e.target);
+        
+        setFormData((prev=>{
+            return{
+            ...prev,
+            [name]: value
+        };
+        }
+    ))
+          console.log("FormData",FormData);  
+        
+
+    }
+    return (
+        <>
+            <div>
+                <p>
+                    <label>Username:</label>
+                </p>
+                <p>
+                   <input type="text" onChange={handlechange}  value={FormData.username} name="username" placeholder="Enter your username" />
+                </p>
+            </div>
+             <div>
+                <p>
+                    <label>Password</label>
+                </p>
+                <p>
+                   <input type="text" onChange={handlechange} value={FormData.password} name="password" placeholder="Enter your password" />
+                </p>
+            </div>
+            <select name='gender' onChange={handlechange} value={FormData.gender}>
+                <option value="male" >Male</option>
+                <option value="female" >Female</option>
+                <option value="not to say" >Not to say</option>
             </select>
-          </p>
-        </div>
-        <button type="submit">register</button>
-      </form>
-    </div>
-  );
+            
+        </>
+    );
 };
 
 export default Cards;
