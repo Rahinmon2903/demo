@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Model from "./Model";
 
 const Data = () => {
   const [data, setData] = useState([]);
@@ -74,6 +75,7 @@ const Data = () => {
         </div>
       ))}
     </div>
+ 
     </div>
   );
 };
