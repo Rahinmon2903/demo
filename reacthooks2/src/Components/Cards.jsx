@@ -15,9 +15,9 @@ const Cards = () => {
     // }
        const handlechange=(e)=>{
         const{name,value}=e.target;
-        // console.log(e.target.name);
-        // console.log(e.target.value);
-        //  console.log(e.target);
+        console.log(e.target.name);
+        console.log(e.target.value);
+         console.log(e.target);
         
         setFormData((prev=>{
             return{
@@ -26,7 +26,7 @@ const Cards = () => {
         };
         }
     ))
-          console.log("FormData",FormData);  
+        //   console.log("FormData",FormData);  
         
 
     }
