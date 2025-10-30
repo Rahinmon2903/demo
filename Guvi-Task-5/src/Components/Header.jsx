@@ -1,6 +1,7 @@
+
 import React from "react";
 
-const Header = () => {
+const Header = ({ setOpen, value }) => {
   return (
     <nav className="backdrop-blur-md bg-white/70 dark:bg-gray-900/60 
                     border-b border-gray-200 dark:border-gray-700 shadow-sm">
@@ -14,14 +15,14 @@ const Header = () => {
         </a>
         <div>
           <button
-            
+            onClick={() => setOpen(true)}
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
                        focus:outline-none focus:ring-blue-300 font-medium 
                        rounded-lg text-sm px-5 py-2.5 text-center 
                        dark:bg-blue-600 dark:hover:bg-blue-700 
                        dark:focus:ring-blue-800"
           >
-            Cart 
+            Cart ({value})
           </button>
         </div>
       </div>
