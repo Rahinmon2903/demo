@@ -4,9 +4,14 @@ import Data from "./Components/Data";
 import Model from "./Components/Model";
 
 const App = () => {
+  // for opening and closing the model
   const [open, setOpen] = useState(false);
-  const [cart, setCart] = useState([]);
+  //  Cart for storing cards inside the model
+  const [cart, setCart] = useState([]); 
+  
+  
 
+//  Function to add a cart if the cart is not added initially
   const handleAddToCart = (product) => {
     const productInCart = cart.find((ele) => ele.id === product.id);
     if (productInCart) {
@@ -16,12 +21,14 @@ const App = () => {
     }
   };
 
+  //  Function to remove the cart
   const handleRemoveFromCart = (product) => {
     setCart(cart.filter((item) => item.id !== product.id));
   };
 
   return (
     <div>
+      {/* passing all the necessary props needed for the component */}
       <Header setOpen={setOpen} value={cart.length} />
       <Data
         handleAddToCart={handleAddToCart}

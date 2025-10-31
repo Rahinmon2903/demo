@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Data = ({ handleAddToCart, handleRemoveFromCart, cart }) => {
+  // getting data from API
   const [data, setData] = useState([]);
 
+  // function to get the data
   useEffect(() => {
     const fetchData = async () => {
       try {

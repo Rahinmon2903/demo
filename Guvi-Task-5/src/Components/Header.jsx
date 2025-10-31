@@ -14,6 +14,7 @@ const Header = ({ setOpen, value }) => {
           />
         </a>
         <div>
+          {/* onclick the model need to be open */}
           <button
             onClick={() => setOpen(true)}
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 

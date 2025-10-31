@@ -1,16 +1,68 @@
-# React + Vite
+🛒 React E‑Commerce Cart with Modal
+A simple e‑commerce web application built with ReactJS, React Router, and Tailwind CSS. It fetches product data from the Fake Store API and allows users to add/remove products from a cart, view cart items in a modal, and navigate between pages.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Product Listing: Fetches and displays products with image, title, description, rating, and price.
 
-Currently, two official plugins are available:
+Add to Cart: Add products to the cart from the product listing page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cart Modal: View cart items in a modal with the ability to remove products.
 
-## React Compiler
+Cart Count: Navbar displays the current number of items in the cart.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive Design: Fully responsive layout using Tailwind CSS.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+ReactJS (Frontend framework)
+
+Tailwind CSS (Styling)
+
+Axios (API calls)
+
+JavaScript (ES6+)
+
+
+
+
+📂 Project Structure
+Code
+src/
+ ├─ Components/
+ │   ├─ Header.jsx
+ │   ├─ Data.jsx
+ │   ├─ Model.jsx
+ │   └─ Cards.jsx
+ ├─ App.jsx
+ ├─ main.jsx
+ └─ index.css
+⚙️ Installation & Setup
+Clone the repository:
+
+bash
+git clone https://github.com/Rahinmon2903/React/tree/main/Guvi-Task-5
+cd Guvi-Task-5
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
+npm run dev
+Open in your browser:
+
+
+📖 Learning Goals
+Practice React state management with useState and useEffect.
+
+Understand conditional rendering and props drilling.
+
+Build a responsive UI with Tailwind CSS.
+
+🙌 Acknowledgements
+Fake Store API for product data.
+
+Tailwind CSS for styling.
+
+
