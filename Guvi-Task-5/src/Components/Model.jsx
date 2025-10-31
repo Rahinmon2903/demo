@@ -28,11 +28,16 @@ const Model = ({ open, setOpen, cart, handleRemoveFromCart }) => {
             </div>
 
             {/* Body */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            <div className="flex-1 overflow-y-auto p-4 md:p-5">
               {cart.length === 0 ? (
-                <p className="text-gray-600 dark:text-gray-300">
-                  Your cart is empty.
-                </p>
+                <div className="flex flex-col items-center justify-center">
+                  <img
+                    src="./src/assets/empty-cart-yellow.png"
+                    alt="Empty Cart"
+                    className="w-48 h-48 object-contain mb-4"
+                  />
+                 
+                </div>
               ) : (
                 cart.map((item) => (
                   <Cards
@@ -44,7 +49,7 @@ const Model = ({ open, setOpen, cart, handleRemoveFromCart }) => {
               )}
             </div>
 
-            {/* Total */}
+            {/* Footer / Total */}
             {cart.length > 0 && (
               <div className="border-t border-gray-200 dark:border-gray-700 p-4 flex 
                               items-center justify-between">
@@ -67,3 +72,4 @@ const Model = ({ open, setOpen, cart, handleRemoveFromCart }) => {
 };
 
 export default Model;
+
