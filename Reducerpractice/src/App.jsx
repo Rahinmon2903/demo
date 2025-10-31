@@ -1,11 +1,12 @@
 import React from 'react';
-import UseReducer from './Components/UseReducer';
+import UseRef from './Components/UseRef';
+// import UseReducer from './Components/UseReducer';
 
 const App = () => {
   return (
     <>
-   <UseReducer/>
-      
+   {/* <UseReducer/> */}
+      <UseRef/>
     </>
   );
 };
