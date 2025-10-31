@@ -1,9 +1,10 @@
 import React from 'react';
+import UseReducer from './Components/UseReducer';
 
 const App = () => {
   return (
     <>
-    <h1>useReducer</h1>
+   <UseReducer/>
       
     </>
   );
