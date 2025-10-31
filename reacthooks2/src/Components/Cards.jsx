@@ -1,35 +1,27 @@
 import React, { useState } from 'react';
 
 const Cards = () => {
-    const[FormData,setFormData]=useState({
+    const [data,setData]=useState({
         username:"Rahin Mon",
         password:"",
-        gender:"female"
+        gender:"not to say"
     })
 
-    // const handlechange=(e)=>{
-    //     setFormData(e.target.value)
-           
-        
-
-    // }
-       const handlechange=(e)=>{
+    const handlechange =(e)=>{
+        // console.log(e.target.value);
         const{name,value}=e.target;
-        console.log(e.target.name);
-        console.log(e.target.value);
-         console.log(e.target);
-        
-        setFormData((prev=>{
+        setData((prev)=>{
             return{
-            ...prev,
-            [name]: value
-        };
-        }
-    ))
-        //   console.log("FormData",FormData);  
+                ...prev,
+                [name]:value
+            }
+        })
         
 
     }
+   
+
+    
     return (
         <>
             <div>
@@ -37,7 +29,7 @@ const Cards = () => {
                     <label>Username:</label>
                 </p>
                 <p>
-                   <input type="text" onChange={handlechange}  value={FormData.username} name="username" placeholder="Enter your username" />
+                   <input type="text" value={data.username} onChange={handlechange}   name="username" placeholder="Enter your username" />
                 </p>
             </div>
              <div>
@@ -45,10 +37,10 @@ const Cards = () => {
                     <label>Password</label>
                 </p>
                 <p>
-                   <input type="text" onChange={handlechange} value={FormData.password} name="password" placeholder="Enter your password" />
+                   <input type="text"  value={data.password} onChange={handlechange}   name="password" placeholder="Enter your password" />
                 </p>
             </div>
-            <select name='gender' onChange={handlechange} value={FormData.gender}>
+            <select name='gender' value={data.gender} onChange={handlechange} >
                 <option value="male" >Male</option>
                 <option value="female" >Female</option>
                 <option value="not to say" >Not to say</option>
