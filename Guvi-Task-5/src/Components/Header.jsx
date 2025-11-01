@@ -1,4 +1,5 @@
 import React from "react";
+import amazon from "../assets/Amazon-Logo-2000.png";
 
 const Header = ({ setOpen, value }) => {
   return (
@@ -10,7 +11,7 @@ const Header = ({ setOpen, value }) => {
       <div className="flex flex-wrap items-center justify-between mx-auto p-2 ">
         <a href="#" className="flex items-center space-x-3">
           <img
-            src="./src/assets/Amazon-Logo-2000.png"
+            src={amazon}
             className="h-12 w-20"
             alt="Amazon Logo"
           />

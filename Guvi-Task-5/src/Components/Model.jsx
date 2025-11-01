@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import yellowcart from "../assets/empty-cart-yellow.png"
 
 const Model = ({ open, setOpen, cart, handleRemoveFromCart }) => {
   // calculate total
@@ -32,7 +33,7 @@ const Model = ({ open, setOpen, cart, handleRemoveFromCart }) => {
               {cart.length === 0 ? (
                 <div className="flex flex-col items-center justify-center">
                   <img
-                    src="./src/assets/empty-cart-yellow.png"
+                    src={yellowcart}
                     alt="Empty Cart"
                     className="w-48 h-48 object-contain mb-4"
                   />
