@@ -20,7 +20,7 @@ const Data = ({ handleAddToCart, handleRemoveFromCart, cart }) => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 
+      className="min-h-screen bg-gradient-to-br pt-20 from-gray-100 via-gray-200 to-gray-300 
                     dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 ">
